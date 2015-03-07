@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <title>Catalogo de VideoJuegos</title>  
+    <title>Catalogo de VideoJuegos</title>
+    <title></title>  
 
     
     <script type="text/javascript"></script>
