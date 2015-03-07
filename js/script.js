@@ -1,10 +1,13 @@
 function DescripcionJuego(IdJuego){
+	
 	$.ajax({
 		url:"VerJuego.php",
 		type:"get",
 		data:{ID: IdJuego},
 		dataType:"json",
 		success:function(data){
+
+
 			
 		}
 	});

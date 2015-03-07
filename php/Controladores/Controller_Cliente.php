@@ -27,6 +27,8 @@
 			return $this->datos;
 		}
 
+		//Cambio
+
 		function set_Cliente($cedula, $nombre, $apellido, $telefono, $user, $pass){
 			$this->datos = $this->cliente->set_cliente($cedula, $nombre, $apellido, $telefono, $user, $pass);
 			return $this->datos;

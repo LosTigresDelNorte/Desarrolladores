@@ -10,6 +10,8 @@
 			$this->juego=new Model_Juego();
 		}
 
+		//CambiosEspacios
+
 		function get_Juegos(){
 			$this->datos=$this->juego->get_juegos();
 			return $this->datos;

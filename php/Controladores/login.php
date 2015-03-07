@@ -7,6 +7,8 @@
 	if(isset($_SESSION["user"])){
 		// echo "Session is set"; // for testing purposes
 		header("Location: ../Vistas/Inicio.php");
+
+		//ECHOCAMBIOS
 	}
 
 	if(!isset($_SESSION["user"])){

@@ -12,6 +12,8 @@ class Model_Juego{
 	public function get_juegos(){
 		$this->juegos=$this->db->db_select("Select * from JUEGO");
 		return $this->juegos;
+
+		//Cambio
 	}
 
 	public function get_juego($id){

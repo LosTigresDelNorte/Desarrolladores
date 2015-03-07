@@ -18,6 +18,8 @@ class Controller_Prestamo{
 		function set_Prestamo($fecha1, $fecha2, $pago, $cliente, $juego){
 			$this->datos = $this->prestamo->set_prestamo($fecha1, $fecha2, $pago, $cliente, $juego);
 			return $this->datos;
+
+			//Cambios
 		}
 }
 
@@ -36,3 +38,5 @@ if(!empty($_POST['JUEGO']) && !empty($_POST['USER']) && !empty($_POST['TIEMPO'])
 }
 
 ?>
+
+//Cambios
