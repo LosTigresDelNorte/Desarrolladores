@@ -23,7 +23,7 @@
             <form name="loginform" id="loginform" action="php/Controladores/login.php" method="POST">            
                 <h1>LOGIN</h1>
                 <p>
-                    <label for="user_login">Nombre De Usuario<br />
+                    <h2><label for="user_login">Nombre De Usuario<br /></h2>
                     <input type="text" name="user" id="user" class="input" value="" size="20" /></label>
                 </p>
                 <p>
@@ -38,6 +38,10 @@
         </article>
     </section>
 </body>
+
+
+
+
 
 
 </html>
