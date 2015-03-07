@@ -20,11 +20,17 @@
 		function get_Cliente($id){
 			$this->datos=$this->cliente->get_cliente($id);
 			return $this->datos;
+
+
+
+
 		}
 
 		function get_Cliente1($user){
 			$this->datos=$this->cliente->get_cliente1($user);
 			return $this->datos;
+
+			//ActualizandoPHP
 		}
 
 		//Cambio
