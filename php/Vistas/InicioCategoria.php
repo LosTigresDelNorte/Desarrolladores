@@ -23,6 +23,15 @@ if(!isset($_SESSION["user"])){
 			<header id='TituloJuegoSelect'>
 				<h1>Prestamo de VideoJuegos</h1>
 			</header>
+			<hr>
+				<form name="busqueda" id="busqueda" action="../Controladores/Controller_Juegos.php" method="post">
+					<p>
+						<label >Buscar:
+						<input type="text" name="buscar" id="buscar" class="input" size="40" value="Nombre Juego..."  /></label>
+						<input type="submit" name="Buscar" id="Buscar" class="button" value="Buscar" />
+					</p>
+				</form>
+			<hr>
 					<?php
 						require ('../Modelos/Db.php');
 						require '../Controladores/Controller_Juegos.php';
@@ -47,11 +56,22 @@ if(!isset($_SESSION["user"])){
 		
 		<?php
 			require '../Controladores/Controller_Categoria.php';
+			require '../Controladores/Controller_Cliente.php';
+			$cont = new Controller_Cliente();
+			
 			if(isset($_SESSION["user"])){
+				$datos = $cont->get_Cliente1($_SESSION["user"]);
+				$datos = $datos[0];
 				echo "
-					<div id='infoUser'>USER: ".$_SESSION['user']."
+					<div id='infoUser'>
+					USER: ".$datos['USER']."
 					<br>
-					<a href='../Controladores/logout.php' >OPCIONES USUARIO</a>
+
+					<img width='80' height='80' src='../../".$datos["IMAGEN"]."''  ></img>
+					<br>
+					<a href='Carrito.php' >VER CARRITO</a>
+					<br>
+					<a href='PrestamosUsuario.php' >PERFIL</a>
 					<br>
 					<a href='../Controladores/logout.php' >CERRAR SESION</a></div>
 				";
@@ -67,8 +87,25 @@ if(!isset($_SESSION["user"])){
 			}
 
 		?>
-			<li ><a href='Inicio.php' >TODAS</a></li>
+			<li ><a href='Inicio.php' >Todas</a></li>
 		</ul>
+		<h1>MAS ALQUILADOS</h1>
+		<ul id='masquilados'>
+			<?php
+			     require '../Controladores/Controller_Masbuscado.php';
+			     $mas = new Controller_Masbuscado();
+			     $cont = new Controller_Juegos();
+			     $datos = $mas->get_masbuscado();
+			      foreach ($datos as &$dato) {
+			      	$dato=$cont->get_Juego($dato['IDJUEGO']);
+			      	$dato=$dato[0];
+				  echo  "<li>
+				  		<img class='ImagenJuego' src='../../".$dato["IMAGEN"]."''  onclick='DescripcionJuego(this.id)' id=".$dato["IDJUEGO"]."></img>
+				  		</li>";
+			     }
+			  ?>   				 
+			  
+		</ul>  
 
 
 	</aside>

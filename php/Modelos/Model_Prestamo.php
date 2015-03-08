@@ -17,8 +17,6 @@ class Model_Prestamo{
 		$CANTIDAD=$this->db->db_select("select CANTIDAD from JUEGO where IDJUEGO='$juego';");
 		$cant=$CANTIDAD[0];
 		$cant=$cant["CANTIDAD"];
-
-		//Cambios><php
 		$cant--;
 		$query = "Update JUEGO set CANTIDAD='$cant' where IDJUEGO='$juego';";
 		$this->prestamo=$this->db->db_query($query);

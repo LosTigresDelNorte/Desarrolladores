@@ -1,9 +1,6 @@
 <?php
 	require ('../Modelos/Model_Categoria.php');
-	//Control
 	
-
-
 
 	class Controller_Categoria{
 		private $categoria;
