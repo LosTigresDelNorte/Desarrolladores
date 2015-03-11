@@ -2,6 +2,8 @@
 	require ('../Modelos/Model_Categoria.php');
 	
 
+
+
 	class Controller_Categoria{
 		private $categoria;
 		private $datos;

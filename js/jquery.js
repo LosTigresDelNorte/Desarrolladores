@@ -31,6 +31,8 @@ var
 
 	// Use the correct document accordingly with window argument (sandbox)
 	location = window.location,
+
+	
 	document = window.document,
 	docElem = document.documentElement,
 
