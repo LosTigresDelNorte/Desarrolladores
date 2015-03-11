@@ -6,6 +6,8 @@
 		public function __construct(){
 			$this->db=new Db();
 			$this->categorias=array();
+
+			//ContruccionCambio
 		
 		}
 

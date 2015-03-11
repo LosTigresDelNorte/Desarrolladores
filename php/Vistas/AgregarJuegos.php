@@ -15,6 +15,8 @@ if(!isset($_SESSION["user"])){
 		<script type="text/javascript" src="../../js/jquery.js"></script>
 		<title>Catalogo de VideoJuegos</title>	
 	</head>
+
+	//AgregandoCAMBIOS
  		
 	<body>
 		<header id='Titulo'>

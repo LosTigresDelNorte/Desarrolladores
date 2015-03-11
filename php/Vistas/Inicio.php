@@ -23,6 +23,7 @@ if(!isset($_SESSION["user"])){
 			<header id='TituloJuegoSelect'>
 				<h1>Prestamo de VideoJuegos</h1>
 			</header>
+			//CambiosPHP1
 					<?php
 						require ('../Modelos/Db.php');
 						require '../Controladores/Controller_Juegos.php';

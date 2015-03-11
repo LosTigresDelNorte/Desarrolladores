@@ -8,6 +8,8 @@ class Db{
 
 	function db_connect(){
 
+		//BaseDatos
+
 		//prueba que conecta a la base de datos, si la conexion no se ha establecido aun 
 		if(!isset(self::$connection)){
 			//carga la configuracion como un array

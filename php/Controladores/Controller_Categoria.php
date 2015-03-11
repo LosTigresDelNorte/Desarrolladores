@@ -1,5 +1,6 @@
 <?php
 	require ('../Modelos/Model_Categoria.php');
+	//Control
 	
 
 

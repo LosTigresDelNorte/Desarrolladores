@@ -1,6 +1,9 @@
 /*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/
+
+
+
  *
  * Includes Sizzle.js
  * http://sizzlejs.com/
@@ -9,6 +12,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
+
  * Date: 2013-07-03T13:48Z
  */
 (function( window, undefined ) {
@@ -18,6 +22,7 @@
 // you try to trace through "use strict" call chains. (#13335)
 // Support: Firefox 18+
 //"use strict";
+//Variables
 var
 	// The deferred used on DOM ready
 	readyList,
